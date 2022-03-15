@@ -19,82 +19,269 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container p-3">
-      <h2 class="">EXE 1</h2>
-      <div class="form-group">
-        <label for="txt-number1" class="mb-0">Số thứ nhất:</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="txt-number1"
-          aria-describedby="helpId"
-          placeholder="Nhập số"
-        />
+    <h1>Javascript day 3</h1>
+    <!-- Start EXE 1 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="">EXE 1: Sắp xếp tăng dần</h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập 3 số nguyên
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất 3 số theo thứ tự tăng
+            dần
+          </p>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="txt-number2" class="mb-0">Số thứ hai:</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="txt-number2"
-          aria-describedby="helpId"
-          placeholder="Nhập số"
-        />
-      </div>
-      <div class="form-group">
-        <label for="txt-number3" class="mb-0">Số thứ ba:</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="txt-number3"
-          aria-describedby="helpId"
-          placeholder="Nhập số"
-        />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" onclick="ascending()">
-          Sắp xếp tăng
-        </button>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="ket-qua"
-          aria-describedby="helpId"
-          placeholder="Kết quả"
-        />
-      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="exe1-txt-number1" class="mb-0">Số thứ nhất:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe1-txt-number1"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exe1-txt-number2" class="mb-0">Số thứ hai:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe1-txt-number2"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exe1-txt-number3" class="mb-0">Số thứ ba:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe1-txt-number3"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" onclick="ascending()">Sắp xếp</button>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="ket-qua"
+            aria-describedby="helpId"
+            placeholder="Kết quả"
+          />
+        </div>
+      </section>
     </div>
     <!-- End EXE 1 -->
 
     <!-- Start EXE 2 -->
-    <div class="container p-3">
-      <h2 class="">EXE 2</h2>
-      <!-- Button trigger modal -->
-      
-              <div class="form-group">
-                <label for="" class="mb-0">Thành viên gia đình:</label>
-                <select class="custom-select" name="" id="select-member">
-                  <option selected>Bấm chọn</option>
-                  <option value="1" class="a" id="member1">Bố</option>
-                  <option value="2" class="a" id="member2">Mẹ</option>
-                  <option value="3" class="a" id="member3">Anh trai</option>
-                  <option value="4" class="a" id="member4">Em gái</option>
-                </select>
-              </div>
-            
-              <button class="btn btn-primary" onclick="chao()">
-                Đồng ý
-              </button>
-            </div>
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="">EXE 2: Chào hỏi</h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Chọn thành viên
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Chào thành viên đã chọn
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="select-member" class="mb-0">Ai là người tham gia:</label>
+          <select class="custom-select" name="" id="select-member">
+            <option selected disabled>Bấm chọn</option>
+            <option value="B">Bố</option>
+            <option value="M">Mẹ</option>
+            <option value="A">Anh trai</option>
+            <option value="E">Em gái</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+            onclick="welcome()"
+          >
+            Đồng ý
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">GAME SHOW</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <marquee
+              width="100%"
+              behavior="alternate"
+              direction=""
+              id="text-modal-body"
+            ></marquee>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Thoát
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
       </div>
     </div>
     <!-- End EXE 2 -->
+
+    <!-- Start EXE 3 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="">EXE 3: Tìm số chẵn, số lẻ</h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập 3 số nguyên
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra số chẵn, số lẻ
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="exe3-txt-number1" class="mb-0">Số thứ nhất:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe3-txt-number1"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+          <p id="exe3-ket-qua1" class="btn btn-success">Kết quả</p>
+        </div>
+        <div class="form-group">
+          <label for="exe3-txt-number2" class="mb-0">Số thứ hai:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe3-txt-number2"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+          <p id="exe3-ket-qua2" class="btn btn-success">Kết quả</p>
+        </div>
+        <div class="form-group">
+          <label for="exe3-txt-number3" class="mb-0">Số thứ ba:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="exe3-txt-number3"
+            aria-describedby="helpId"
+            placeholder="Nhập số"
+          />
+          <p id="exe3-ket-qua3" class="btn btn-success">Kết quả</p>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" onclick="chanLe()">Phân loại:</button>
+          <p id="exe3-ket-qua"></p>
+        </div>
+        <div class="form-group"></div>
+      </section>
+    </div>
+    <!-- End EXE 3 -->
+
+    <!-- Start EXE 4 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="">EXE 4: Tìm loại tam giác</h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập 3 cạnh của tam giác
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra loại tam giác (tam
+            giác cân, tam giác thường, tam giác vuông, tam giác đều)
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="txt-canh1" class="mb-0">Cạnh thứ nhất:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="txt-canh1"
+            aria-describedby="helpId"
+            placeholder="Nhập chiều dài"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txt-canh2" class="mb-0">Cạnh thứ hai:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="txt-canh2"
+            aria-describedby="helpId"
+            placeholder="Nhập chiều dài"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txt-canh3" class="mb-0">Cạnh thứ ba:</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="txt-canh3"
+            aria-describedby="helpId"
+            placeholder="Nhập chiều dài"
+          />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" onclick="calculator()">
+            Phân loại
+          </button>
+          <p id="exe4-ket-qua" class="btn btn-success ml-0">Kết quả</p>
+        </div>
+      </section>
+    </div>
+    <!-- End EXE 4 -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -112,7 +299,9 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./js/baiTap1.js"></script> -->
+    <script src="./js/baiTap1.js"></script>
     <script src="./js/baiTap2.js"></script>
+    <script src="./js/baiTap3.js"></script>
+    <script src="./js/batTap4.js"></script>
   </body>
 </html>
