@@ -62,12 +62,7 @@ document.getElementById("check-exe1").addEventListener("click", function () {
               `${year}`;
 
             dayBefore.innerText =
-              "Ngày " +
-              `${day - 1}` +
-              ", tháng " +
-              `${month}` +
-              ", năm " +
-              `${year}`;
+              "Ngày 30" + ", tháng " + `${month - 1}` + ", năm " + `${year}`;
           }
         } else {
           alert("Tháng " + `${month}` + " có 31 ngày. Vui lòng kiểm tra lại!");
@@ -90,6 +85,17 @@ document.getElementById("check-exe1").addEventListener("click", function () {
               `${month}` +
               ", năm " +
               `${year}`;
+          } else if (day == 1) {
+            dayAfter.innerText =
+              "Ngày " +
+              `${day + 1}` +
+              ", tháng " +
+              `${month}` +
+              ", năm " +
+              `${year}`;
+
+            dayBefore.innerText =
+              "Ngày 31" + ", tháng " + `${month - 1}` + ", năm " + `${year}`;
           } else {
             dayAfter.innerText =
               "Ngày " +
@@ -125,7 +131,7 @@ document.getElementById("check-exe1").addEventListener("click", function () {
               `${month}` +
               ", năm " +
               `${year}`;
-          } else {
+          } else if (day <= 28) {
             dayBefore.innerText =
               "Ngày " +
               `${day - 1}` +
@@ -141,34 +147,40 @@ document.getElementById("check-exe1").addEventListener("click", function () {
               `${month}` +
               ", năm " +
               `${year}`;
+          } else {
+            alert("Tháng 2 có 29 ngày năm nhuận!");
           }
-        } else if (day == 28) {
-          dayAfter.innerText =
-            "Ngày 1" + ", tháng " + `${month + 1}` + ", năm " + `${year}`;
-
-          dayBefore.innerText =
-            "Ngày " +
-            `${day - 1}` +
-            ", tháng " +
-            `${month}` +
-            ", năm " +
-            `${year}`;
         } else {
-          dayBefore.innerText =
-            "Ngày " +
-            `${day - 1}` +
-            ", tháng " +
-            `${month}` +
-            ", năm " +
-            `${year}`;
+          if (day == 28) {
+            dayAfter.innerText =
+              "Ngày 1" + ", tháng " + `${month + 1}` + ", năm " + `${year}`;
 
-          dayAfter.innerText =
-            "Ngày " +
-            `${day + 1}` +
-            ", tháng " +
-            `${month}` +
-            ", năm " +
-            `${year}`;
+            dayBefore.innerText =
+              "Ngày " +
+              `${day - 1}` +
+              ", tháng " +
+              `${month}` +
+              ", năm " +
+              `${year}`;
+          } else if (day <= 27) {
+            dayBefore.innerText =
+              "Ngày " +
+              `${day - 1}` +
+              ", tháng " +
+              `${month}` +
+              ", năm " +
+              `${year}`;
+
+            dayAfter.innerText =
+              "Ngày " +
+              `${day + 1}` +
+              ", tháng " +
+              `${month}` +
+              ", năm " +
+              `${year}`;
+          } else {
+            alert("Tháng 2 có 28 ngày năm không nhuận!");
+          }
         }
         break;
     }
