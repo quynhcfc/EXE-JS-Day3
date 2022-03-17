@@ -8,16 +8,16 @@ function ascending() {
   var result = document.getElementById("ket-qua");
 
   if (number1 < number2 && number2 < number3) {
-    result.value = `${number1}` + ", " + `${number2}` + ", " + `${number3}`;
+    result.innerText = `${number1}` + ", " + `${number2}` + ", " + `${number3}`;
   } else if (number1 < number3 && number3 < number2) {
-    result.value = `${number1}` + ", " + `${number3}` + ", " + `${number2}`;
+    result.innerText = `${number1}` + ", " + `${number3}` + ", " + `${number2}`;
   } else if (number2 < number1 && number1 < number3) {
-    result.value = `${number2}` + ", " + `${number1}` + ", " + `${number3}`;
+    result.innerText = `${number2}` + ", " + `${number1}` + ", " + `${number3}`;
   } else if (number2 < number3 && number3 < number1) {
-    result.value = `${number2}` + ", " + `${number3}` + ", " + `${number1}`;
+    result.innerText = `${number2}` + ", " + `${number3}` + ", " + `${number1}`;
   } else if (number3 < number1 && number1 < number2) {
-    result.value = `${number3}` + ", " + `${number1}` + ", " + `${number2}`;
+    result.innerText = `${number3}` + ", " + `${number1}` + ", " + `${number2}`;
   } else {
-    result.value = `${number3}` + ", " + `${number2}` + ", " + `${number1}`;
+    result.innerText = `${number3}` + ", " + `${number2}` + ", " + `${number1}`;
   }
 }

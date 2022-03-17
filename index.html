@@ -20,7 +20,11 @@
   </head>
   <body>
     <h1>Javascript day 3</h1>
-    <!-- Start EXE 1 -->
+    <!-- START BASIC EXE -->
+    <div class="container">
+      <p class="level-exe">Basic EXE</p>
+    </div>
+    <!-- Start basic EXE 1 -->
     <div class="container dgrid">
       <div class="content">
         <h2 class="">EXE 1: Sắp xếp tăng dần</h2>
@@ -43,7 +47,7 @@
             name=""
             id="exe1-txt-number1"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
         </div>
         <div class="form-group">
@@ -54,7 +58,7 @@
             name=""
             id="exe1-txt-number2"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
         </div>
         <div class="form-group">
@@ -65,25 +69,19 @@
             name=""
             id="exe1-txt-number3"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
         </div>
         <div class="form-group">
           <button class="btn btn-primary" onclick="ascending()">Sắp xếp</button>
-          <input
-            type="text"
-            class="form-control"
-            name=""
-            id="ket-qua"
-            aria-describedby="helpId"
-            placeholder="Kết quả"
-          />
+
+          <p id="ket-qua" class="paragraph"></p>
         </div>
       </section>
     </div>
-    <!-- End EXE 1 -->
+    <!-- End basic EXE 1 -->
 
-    <!-- Start EXE 2 -->
+    <!-- Start basic EXE 2 -->
     <div class="container dgrid">
       <div class="content">
         <h2 class="">EXE 2: Chào hỏi</h2>
@@ -98,13 +96,18 @@
       </div>
       <section class="group">
         <div class="form-group">
-          <label for="select-member" class="mb-0">Ai là người tham gia:</label>
-          <select class="custom-select" name="" id="select-member">
-            <option selected disabled>Bấm chọn</option>
-            <option value="B">Bố</option>
-            <option value="M">Mẹ</option>
-            <option value="A">Anh trai</option>
-            <option value="E">Em gái</option>
+          <label for="select-member" class="mb-0">Chọn thành viên:</label>
+          <select
+            class="custom-select"
+            class="text-center"
+            name=""
+            id="select-member"
+          >
+            <option selected disabled class="text-center">Bấm chọn</option>
+            <option class="text-center" value="B">Bố</option>
+            <option class="text-center" value="M">Mẹ</option>
+            <option class="text-center" value="A">Anh trai</option>
+            <option class="text-center" value="E">Em gái</option>
           </select>
         </div>
         <div class="form-group">
@@ -163,9 +166,9 @@
         </div>
       </div>
     </div>
-    <!-- End EXE 2 -->
+    <!-- End basic EXE 2 -->
 
-    <!-- Start EXE 3 -->
+    <!-- Start basic EXE 3 -->
     <div class="container dgrid">
       <div class="content">
         <h2 class="">EXE 3: Tìm số chẵn, số lẻ</h2>
@@ -187,9 +190,9 @@
             name=""
             id="exe3-txt-number1"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
-          <p id="exe3-ket-qua1" class="btn btn-success">Kết quả</p>
+          <p id="exe3-ket-qua1" class="paragraph ml-3"></p>
         </div>
         <div class="form-group">
           <label for="exe3-txt-number2" class="mb-0">Số thứ hai:</label>
@@ -199,9 +202,9 @@
             name=""
             id="exe3-txt-number2"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
-          <p id="exe3-ket-qua2" class="btn btn-success">Kết quả</p>
+          <p id="exe3-ket-qua2" class="paragraph ml-3"></p>
         </div>
         <div class="form-group">
           <label for="exe3-txt-number3" class="mb-0">Số thứ ba:</label>
@@ -211,9 +214,9 @@
             name=""
             id="exe3-txt-number3"
             aria-describedby="helpId"
-            placeholder="Nhập số"
+            placeholder="nhập số"
           />
-          <p id="exe3-ket-qua3" class="btn btn-success">Kết quả</p>
+          <p id="exe3-ket-qua3" class="paragraph ml-3"></p>
         </div>
         <div class="form-group">
           <button class="btn btn-primary" onclick="chanLe()">Phân loại:</button>
@@ -222,9 +225,9 @@
         <div class="form-group"></div>
       </section>
     </div>
-    <!-- End EXE 3 -->
+    <!-- End basic EXE 3 -->
 
-    <!-- Start EXE 4 -->
+    <!-- Start basic EXE 4 -->
     <div class="container dgrid">
       <div class="content">
         <h2 class="">EXE 4: Tìm loại tam giác</h2>
@@ -247,7 +250,7 @@
             name=""
             id="txt-canh1"
             aria-describedby="helpId"
-            placeholder="Nhập chiều dài"
+            placeholder="nhập chiều dài"
           />
         </div>
         <div class="form-group">
@@ -258,7 +261,7 @@
             name=""
             id="txt-canh2"
             aria-describedby="helpId"
-            placeholder="Nhập chiều dài"
+            placeholder="nhập chiều dài"
           />
         </div>
         <div class="form-group">
@@ -269,18 +272,278 @@
             name=""
             id="txt-canh3"
             aria-describedby="helpId"
-            placeholder="Nhập chiều dài"
+            placeholder="nhập chiều dài"
           />
         </div>
         <div class="form-group">
           <button class="btn btn-primary" onclick="calculator()">
             Phân loại
           </button>
-          <p id="exe4-ket-qua" class="btn btn-success ml-0">Kết quả</p>
+          <p id="exe4-ket-qua" class="paragraph"></p>
         </div>
       </section>
     </div>
-    <!-- End EXE 4 -->
+    <!-- End basic EXE 4 -->
+    <!-- END BASIC EXE -->
+
+    <!-- START ADVANCED EXE -->
+    <div class="container">
+      <p class="level-exe">Advanced EXE</p>
+    </div>
+    <!-- Start advanced EXE 1 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="heading-exe">
+          EXE 1: <span>Tìm ngày tháng năm liền kề.</span>
+        </h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập ngày, tháng, năm.
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra ra ngày, tháng, năm
+            liền kề trước và sau đó.
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div action="" class="form-group">
+          <label for="txt-day1">Ngày:</label>
+          <input
+            type="text"
+            id="txt-day1"
+            class="form-control"
+            placeholder="nhập ngày"
+          />
+        </div>
+        <div action="" class="form-group">
+          <label for="txt-month1">Tháng:</label>
+          <input
+            type="text"
+            id="txt-month1"
+            class="form-control"
+            placeholder="nhập tháng"
+          />
+        </div>
+        <div action="" class="form-group">
+          <label for="txt-year1">Năm:</label>
+          <input
+            type="text"
+            id="txt-year1"
+            class="form-control"
+            placeholder="nhập năm"
+          />
+        </div>
+        <div action="" class="form-group">
+          <button class="btn btn-primary" id="check-exe1">Kiểm tra</button>
+          <div>
+            <p id="day-before" class="paragraph mb-2"></p>
+          </div>
+          <div>
+            <p id="" class="paragraph mb-2 ml-2">Ngày trước</p>
+          </div>
+          <div>
+            <p id="" class="paragraph mb-2"></p>
+          </div>
+          <div>
+            <p id="day-after" class="paragraph mb-2"></p>
+          </div>
+          <div>
+            <p id="" class="paragraph mb-2 ml-2">Ngày sau</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End advanced EXE 1 -->
+
+    <!-- Start advanced EXE 2 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="heading-exe">
+          EXE 2: <span>Kiểm tra tháng có bao nhiêu ngày?</span>
+        </h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập tháng, năm.
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra số ngày của tháng đó.
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div action="" class="form-group">
+          <label for="txt-month2">Tháng:</label>
+          <input
+            type="text"
+            id="txt-month2"
+            class="form-control"
+            placeholder="nhập tháng"
+          />
+        </div>
+        <div action="" class="form-group">
+          <label for="txt-year2">Năm:</label>
+          <input
+            type="text"
+            id="txt-year2"
+            class="form-control"
+            placeholder="nhập năm"
+          />
+        </div>
+        <div action="" class="form-group">
+          <button class="btn btn-primary" id="check-exe2">Kiểm tra</button>
+          <p id="paragraph-exe2" class="paragraph"></p>
+        </div>
+      </section>
+    </div>
+    <!-- End advanced EXE 2 -->
+
+    <!-- Start advanced EXE 3 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="heading-exe">
+          EXE 3: <span>Hướng dẫn cách đọc số nguyên 3 chữ số.</span>
+        </h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập số nguyên 3 chữ số.
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra cách đọc số đó.
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="">Số nguyên 3 chữ số:</label>
+          <input
+            type="text"
+            name=""
+            id="txt-number"
+            class="form-control"
+            placeholder="nhập số"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div action="" class="form-group">
+          <button class="btn btn-primary" id="result-exe3">Cách đọc</button>
+          <p id="paragraph-exe3" class="paragraph"></p>
+        </div>
+      </section>
+    </div>
+    <!-- End advanced EXE 3 -->
+
+    <!-- Start advanced EXE 4 -->
+    <div class="container dgrid">
+      <div class="content">
+        <h2 class="heading-exe">
+          EXE 4: <span>Tìm vị trí sinh viên xa trường nhất</span>
+        </h2>
+        <div>
+          <p class="description">
+            <span class="text-trong">Input:</span>Nhập tọa độ vị trí sinh viên
+            và trường.
+          </p>
+          <p class="description">
+            <span class="text-trong">Output:</span>Xuất ra sinh viên ở xa trường
+            nhất.
+          </p>
+        </div>
+      </div>
+      <section class="group">
+        <div class="form-group">
+          <label for="">Sinh viên 1:</label>
+          <div class="d-flex">
+            <input
+              type="text"
+              name=""
+              id="student11"
+              class="form-control"
+              placeholder="tọa độ x"
+              aria-describedby="helpId"
+            />
+
+            <input
+              type="text"
+              name=""
+              id="student12"
+              class="form-control"
+              placeholder="tọa độ y"
+              aria-describedby="helpId"
+            />
+          </div>
+        </div>
+        <div action="" class="form-group">
+          <label for="student2">Sinh viên 2:</label>
+          <div class="d-flex">
+            <input
+              type="text"
+              name=""
+              id="student21"
+              class="form-control"
+              placeholder="tọa độ x"
+              aria-describedby="helpId"
+            />
+            <input
+              type="text"
+              name=""
+              id="student22"
+              class="form-control"
+              placeholder="tọa độ y"
+              aria-describedby="helpId"
+            />
+          </div>
+        </div>
+        <div action="" class="form-group">
+          <label for="">Sinh viên 3:</label>
+          <div class="d-flex">
+            <input
+              type="text"
+              name=""
+              id="student31"
+              class="form-control"
+              placeholder="tọa độ x"
+              aria-describedby="helpId"
+            />
+            <input
+              type="text"
+              name=""
+              id="student32"
+              class="form-control"
+              placeholder="tọa độ y"
+              aria-describedby="helpId"
+            />
+          </div>
+        </div>
+        <div action="" class="form-group">
+          <label for="">Trường:</label>
+          <div class="d-flex">
+            <input
+              type="text"
+              name=""
+              id="school1"
+              class="form-control"
+              placeholder="tọa độ x"
+              aria-describedby="helpId"
+            />
+            <input
+              type="text"
+              name=""
+              id="school2"
+              class="form-control"
+              placeholder="tọa độ y"
+              aria-describedby="helpId"
+            />
+          </div>
+        </div>
+        <div action="" class="form-group">
+          <button class="btn btn-primary" id="result-exe4">Tìm nào</button>
+          <p id="paragraph-exe4" class="paragraph"></p>
+        </div>
+      </section>
+    </div>
+    <!-- End advanced EXE 4 -->
+    <!-- END ADVANCED EXE -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -299,9 +562,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/baiTap1.js"></script>
-    <script src="./js/baiTap2.js"></script>
-    <script src="./js/baiTap3.js"></script>
-    <script src="./js/batTap4.js"></script>
+    <script src="./js/basic/baiTap1.js"></script>
+    <script src="./js/basic/baiTap2.js"></script>
+    <script src="./js/basic/baiTap3.js"></script>
+    <script src="./js/basic/batTap4.js"></script>
+    <script src="./js/advanced/baiTap1.js"></script>
+    <script src="./js/advanced/baiTap2.js"></script>
+    <script src="./js/advanced/baiTap3.js"></script>
+    <script src="./js/advanced/baiTap4.js"></script>
   </body>
 </html>

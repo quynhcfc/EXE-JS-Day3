@@ -22,6 +22,6 @@ function calculator() {
       ketqua.innerText = "Tam giác thường";
     }
   } else {
-    alert("Nhập lại");
+    alert("Vui lòng kiểm tra lại!");
   }
 }

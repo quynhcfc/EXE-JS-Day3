@@ -20,5 +20,6 @@ function welcome() {
       break;
     default:
       textModal.innerText = "Bạn chưa chọn thành viên !";
+      break;
   }
 }
