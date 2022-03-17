@@ -182,6 +182,18 @@ document.getElementById("check-exe1").addEventListener("click", function () {
             alert("Tháng 2 có 28 ngày năm không nhuận!");
           }
         }
+        if (day == 1) {
+          dayBefore.innerText =
+            "Ngày 31" + ", tháng " + `${month - 1}` + ", năm " + `${year}`;
+
+          dayAfter.innerText =
+            "Ngày " +
+            `${day + 1}` +
+            ", tháng " +
+            `${month}` +
+            ", năm " +
+            `${year}`;
+        }
         break;
     }
   }
