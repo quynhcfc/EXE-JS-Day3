@@ -147,6 +147,17 @@ document.getElementById("check-exe1").addEventListener("click", function () {
               `${month}` +
               ", năm " +
               `${year}`;
+          } else if (day == 1 && month == 3) {
+            dayBefore.innerText =
+              "Ngày 29" + ", tháng " + `${month - 1}` + ", năm " + `${year}`;
+
+            dayAfter.innerText =
+              "Ngày " +
+              `${day + 1}` +
+              ", tháng " +
+              `${month}` +
+              ", năm " +
+              `${year}`;
           } else {
             alert("Tháng 2 có 29 ngày năm nhuận!");
           }
